@@ -1,0 +1,91 @@
+* {
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 30px;
+   text-align: center;
+}
+
+#calendar {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+.months {
+   padding: 10px;
+   width: 33%;
+   margin: 0px;
+}
+@media screen and (max-width: 756px){
+   .months{
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .months {
+      width: 100%;
+   }
+}
+
+.days_space,
+.dates_space {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.mood {
+   cursor: pointer;
+}
+.mood:hover {
+   transform: scale(1.2);
+}
+
+.selected {
+   transform: scale(1.2);
+}
+
+.day,
+.day_space {
+   height: calc(100% / 7);
+   width: calc(100% / 7);
+   text-align: center;
+}
+
+.day .circle {
+   border-radius: 50%;
+   background-color: whitesmoke;
+   display: inline-flex;
+   justify-content: center;
+   align-content: center;
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+
+
+.day .circle:hover {
+   transform: scale(1.15);
+}
+
+
+#btn1 {
+   color: red;
+}
+#btn2 {
+   color: yellow;
+}
+#btn3 {
+   color: green;
+}
+#btn4 {
+   color: blue;
+}
+#btn5 {
+   color: purple;
+}
