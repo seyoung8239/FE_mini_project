@@ -1,0 +1,12 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.lang {
+   background-color: whitesmoke;
+   width: 200px;
+   height: 50px;
+   border: 1px solid tan;
+   margin: 10px 10px;
+}
